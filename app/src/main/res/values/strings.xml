@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MovieInfo</string>
+    <string name="reviews">Reviews</string>
+    <string name="trailer">Trailer</string>
+    <string name="poster">poster</string>
+    <string name="title">title</string>
+    <string name="rdate">releasedate</string>
+    <string name="desc">description</string>
+    <string name="movieid">movieId</string>
+    <string name="tr">trailer</string>
+    <string name="rting">rating</string>
+    <string name="makejason">makeJasonString:</string>
+    <string name="makeurl">makeUrl:</string>
+    <string name="no_interent_connection_found">No interent connection found</string>
+    <string name="click_on_the_star_button_to_add_movie_to_favourities">Click on the star button to add Movie to favourities</string>
+    <string name="sortingcri">sort</string>
+    <string name="currentscroll">scroll position</string>
+    <string name="scroll">scroll_position</string>
+    <string name="seposition">scroll_position</string>
+    <string name="sortpref">sorting_pref</string>
+</resources>

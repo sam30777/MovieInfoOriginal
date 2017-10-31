@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detailed_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.movieinfo.DetailedList">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="monospace"
+            android:padding="16dp"
+            android:backgroundTintMode="multiply"
+            android:text="@string/click_on_the_star_button_to_add_movie_to_favourities"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/posterimage"
+            android:layout_width="150dp"
+            android:layout_height="200dp" />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/star"
+                android:id="@+id/starAdd"
+                android:layout_height="40dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:id="@+id/rating"
+                android:layout_gravity="bottom"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/black" />
+
+
+        <TextView
+            android:id="@+id/reDate"
+           android:textColor="@android:color/widget_edittext_dark"
+            android:fontFamily="serif-monospace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/movieDesciption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="casual"
+            android:padding="10dp"
+            android:textSize="25sp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/background_light"
+            android:text="@string/trailer"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/tBackground"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/blanckTrailer"
+                android:textSize="22sp"
+                android:visibility="gone"
+                android:text="The Movie Does'nt have Trailer"
+                android:layout_centerInParent="true"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/capture"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:id="@+id/tYicon"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="casual"
+            android:textSize="25sp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/holo_blue_dark"
+            android:textColor="@android:color/background_light"
+            android:text="@string/reviews"/>
+
+              <ProgressBar
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/pBar"
+                  android:layout_gravity="center"
+                  />
+
+      <com.example.android.movieinfo.NonScrollListView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/reviewlist"></com.example.android.movieinfo.NonScrollListView>
+
+
+    </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
